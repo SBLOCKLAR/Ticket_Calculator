@@ -1,5 +1,7 @@
-const avgMonthlyInput = document.querySelector('input')
-// const avgMonthly = avgMonthlyInput.value;
+// Input Target
+const avgMonthlyInput = document.querySelector('input');
+
+// Elements to Update
 const annualEl = document.querySelector('#grossAnnual');
 const visaMCEl = document.querySelector('#visaMC');
 const discoverEl = document.querySelector('#discover');
@@ -14,7 +16,7 @@ function grossAnnual(avgMonthly) {
 
 // function visaMC(grossAnnual)
 function visaMC(avgMonthly) {
-    let visaMCResult = (avgMonthly * 12) * 0.70;
+    let visaMCResult = Math.ceil((avgMonthly * 12) * 0.70);
     visaMCEl.innerText = '$' + parseInt(visaMCResult);
 }
 
@@ -36,6 +38,6 @@ avgMonthlyInput.addEventListener('input', function () {
     grossAnnual(avgMonthly);
     visaMC(avgMonthly);
     discover(avgMonthly);
-    amex(avgMonthly)
+    amex(avgMonthly);
 });
 

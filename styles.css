@@ -15,9 +15,9 @@ body {
 
 h1 {
     color: whitesmoke;
-    margin: 1em auto;
+    margin: 0.5em auto;
     font-size: 5em;
-    width: 100%;
+    max-width: 100%;
     text-align: center;
     font-family: 'Kurale', serif;
 }
@@ -25,6 +25,7 @@ h1 {
 .deskContainer {
     background-image: url(assets/desk.jpg);
     background-size: auto 100%;
+    background-position: right;
     margin: 0 auto;
     height: 30em;
     min-width: 200px;
@@ -34,9 +35,23 @@ h1 {
     padding-left: 7em;
 }
 
+/* Removes buttons from */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
 input {
     margin: 0.75em;
     width: 100px;
+    text-align: center;
 }
 
 table,
@@ -46,6 +61,7 @@ td {
     border-radius: 2px;
     border: 1px solid black;
     text-align: center;
+    background-color: whitesmoke;
 }
 
 table {
@@ -57,10 +73,22 @@ td {
     width: 50%;
 }
 
+#credit {
+    text-align: center;
+    color: whitesmoke;
+}
+
+#credit>a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
 @media (max-width: 450px) {
     .deskContainer {
         padding-left: 0;
         text-align: center;
+
     }
 
     table {
