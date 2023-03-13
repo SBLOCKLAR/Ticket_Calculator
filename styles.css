@@ -32,8 +32,17 @@ h1 {
     max-width: 715px;
     border-radius: 15px;
     padding-top: 3em;
-    padding-left: 7em;
 }
+
+
+.inputContainer {
+    background-color: rgba(255, 255, 255, 60%);
+    width: 39%;
+    text-align: center;
+    min-width: 275px;
+    border-radius: 15px;
+}
+
 
 /* Removes buttons from */
 /* Chrome, Safari, Edge, Opera */
@@ -64,9 +73,11 @@ td {
     background-color: whitesmoke;
 }
 
-table {
+table,
+.inputContainer {
     max-width: 400px;
     margin-top: 1em;
+    margin-left: 7em;
 }
 
 td {
