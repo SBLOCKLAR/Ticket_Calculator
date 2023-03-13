@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICKETS CALCULATOR</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Tickets Calculator</h1>
+    <div class="deskContainer">
+        <!-- <img id="desk" src="assets/desk.jpg" alt="desk"> -->
+        <div class="inputContainer">
+            <p>Enter Average Monthly Volume</p>
+            $ <input type="number">
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Gross Annual</th>
+                    <td>
+                        <p id="grossAnnual">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <img class="cardLogo" src="assets/visa.png" alt="visa">
+                        <img class="cardLogo" src="assets/mc.png" alt="master card">
+                    </th>
+                    <td>
+                        <p id="visaMC">-</p>
+                    </td>
+                </tr>
+                <tr>
+                    <th><img class="cardLogo" src="assets/discover.png" alt="discover"></th>
+                    <td id="discover">-</td>
+                </tr>
+                <tr>
+                    <th><img class="cardLogo" src="assets/amex.png" alt="AMEX"></th>
+                    <td id="amex">-</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
